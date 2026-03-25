@@ -36,6 +36,10 @@ active = true
 - First, place each file in one of the following directories depending on the nature of each model file: `embeddings/`, `models/Lora/`, `models/Stable-diffusion/`, `models/VAE/` (main model files go in the Stable-diffusion directory)
 - Display the command list with `make help` and refer to it to decide which command to use.
 
+### ETC
+- You can also add extensions easily, [Example](https://github.com/Zyin055/Config-Presets?tab=readme-ov-file#easy-way)
+- Even if you completely stop a deployed app from the dashboard, you can redeploy it with `make deploy` to restore the same conditions and environment (each models, extensions, and previously generated images before running the deletion script, are all stored in Modal's persistent volume)
+
 ## 日本語
 
 Stable Diffusion WebuiをModalサーバーレス環境にデプロイします。  
@@ -71,3 +75,7 @@ active = true
 ### ローカルにあるモデル等をリモートへアップロードする方法
 - まず、それぞれのモデルファイルの性質ごとに、`embeddings/`, `models/Lora/`, `models/Stable-diffusion/`, `models/VAE/`のいずれかに各ファイルを置いてください（メインのモデルファイルはStable-diffusionディレクトリになります）
 - `make help`でコマンド一覧を表示し、どのコマンドを使用するかはそちらを参考にしてください。 
+
+### その他
+- 拡張機能もインストールできます（[例](https://github.com/Zyin055/Config-Presets?tab=readme-ov-file#easy-way)）
+- 一度デプロイしたアプリをダッシュボードから完全停止しても、再び`make deploy`することで、前回と同じ条件・環境でアプリが立ち上がり利用できます（各モデル、拡張機能、削除スクリプト実行前の前回の生成画像等はmodalサーバーの永続ボリュームに保管されています）
