@@ -1,0 +1,25 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+
+# Virtual environments
+.venv
+
+# Environment variables
+.env
+
+#output directory
+outputs/*
+!outputs/.gitkeep
+
+#embedding directory
+embeddings/*
+!embeddings/.gitkeep
+
+#models directory
+models/Lora/*
+models/Stable-diffusion/*
+models/VAE/*
+!models/Lora/.gitkeep
+!models/Stable-diffusion/.gitkeep
+!models/VAE/.gitkeep
