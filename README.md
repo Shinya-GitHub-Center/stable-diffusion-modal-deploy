@@ -21,3 +21,5 @@ token_secret = "xxxxxxxxxxxxxxxxxxxxxxxx"
 environment = "sd-webui"
 active = true
 ```
+6. `modal profile current`で利用するプロファイルがアクティブになっていることを確認
+7. `modal deploy main.py`でデプロイ
