@@ -22,4 +22,8 @@ environment = "sd-webui"
 active = true
 ```
 6. `modal profile current`で利用するプロファイルがアクティブになっていることを確認
-7. `modal deploy main.py`でデプロイ
+7. `modal deploy main.py`でデプロイ後、`modal.run`で終わるURLが発行されるので、それがアプリのURLとなる。
+
+## 画像ダウンロード方法
+- `./pullpic.sh`でスクリプトを実行し、outputsディレクトリ以下にリモートで作成された画像が保存される。
+- このスクリプトを実行するごとに、その時点でリモート環境にあるすべての画像がダウンロードされるとともに、それらの画像がリモート環境からすべて削除される。

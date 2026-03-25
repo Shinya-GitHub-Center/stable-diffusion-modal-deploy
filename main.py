@@ -40,7 +40,7 @@ shared_extensions = modal.Volume.from_name("sd_shared_extensions", create_if_mis
 shared_outputs = modal.Volume.from_name("sd_shared_outputs", create_if_missing=True)
 
 app = modal.App(
-    "sd-webui-v1.10.0-app",
+    "v1.10.0",
     image=env_app_image,
     volumes={
         "/webui/models": shared_models,
